@@ -18,7 +18,7 @@
   },
   "typings": "index.d.ts",
   "name": "@nestwallet/use-wallet",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "dependencies": {
     "@nestwallet/wallet-types": "1.2.0",
     "@terra-money/feather.js": "^1.0.0-beta.4"
@@ -85,5 +85,9 @@
       "node": "./_commonjs/useWallet.js",
       "default": "./useWallet.js"
     }
+  },
+  "description": "Core interface of [`@nestwallet/wallet-provider`](https://www.npmjs.com/package/@nestwallet/wallet-provider).",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
