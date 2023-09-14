@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.useInstallableWallets = void 0;
-const wallet_types_1 = require("@terra-money/wallet-types");
+const wallet_types_1 = require("@nestwallet/wallet-types");
 const react_1 = require("react");
 const useWallet_1 = require("./useWallet");
 function useInstallableWallets() {
