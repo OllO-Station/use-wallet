@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.useLCDClient = void 0;
+const wallet_types_1 = require("@terra-money/wallet-types");
+const react_1 = require("react");
+const useWallet_1 = require("./useWallet");
+function useLCDClient() {
+    const { network } = (0, useWallet_1.useWallet)();
+    return (0, react_1.useMemo)(() => {
+        return (0, wallet_types_1.createLCDClient)(network);
+    }, [network]);
+}
+exports.useLCDClient = useLCDClient;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidXNlTENEQ2xpZW50LmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vLi4vc3JjL0B0ZXJyYS1tb25leS91c2Utd2FsbGV0L3VzZUxDRENsaWVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFBQSw0REFFbUM7QUFFbkMsaUNBQWdDO0FBQ2hDLDJDQUF3QztBQUV4QyxTQUFnQixZQUFZO0lBQzFCLE1BQU0sRUFBRSxPQUFPLEVBQUUsR0FBRyxJQUFBLHFCQUFTLEdBQUUsQ0FBQztJQUVoQyxPQUFPLElBQUEsZUFBTyxFQUFZLEdBQUcsRUFBRTtRQUM3QixPQUFPLElBQUEsOEJBQWUsRUFBQyxPQUFPLENBQUMsQ0FBQztJQUNsQyxDQUFDLEVBQUUsQ0FBQyxPQUFPLENBQUMsQ0FBQyxDQUFDO0FBQ2hCLENBQUM7QUFORCxvQ0FNQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7XG4gIGNyZWF0ZUxDRENsaWVudCxcbn0gZnJvbSAnQHRlcnJhLW1vbmV5L3dhbGxldC10eXBlcyc7XG5pbXBvcnQgeyBMQ0RDbGllbnQgfSBmcm9tICdAdGVycmEtbW9uZXkvZmVhdGhlci5qcyc7XG5pbXBvcnQgeyB1c2VNZW1vIH0gZnJvbSAncmVhY3QnO1xuaW1wb3J0IHsgdXNlV2FsbGV0IH0gZnJvbSAnLi91c2VXYWxsZXQnO1xuXG5leHBvcnQgZnVuY3Rpb24gdXNlTENEQ2xpZW50KCk6IExDRENsaWVudCB7XG4gIGNvbnN0IHsgbmV0d29yayB9ID0gdXNlV2FsbGV0KCk7XG5cbiAgcmV0dXJuIHVzZU1lbW88TENEQ2xpZW50PigoKSA9PiB7XG4gICAgcmV0dXJuIGNyZWF0ZUxDRENsaWVudChuZXR3b3JrKTtcbiAgfSwgW25ldHdvcmtdKTtcbn1cbiJdfQ==
