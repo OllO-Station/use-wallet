@@ -1,18 +1,18 @@
-# `@terra-money/use-wallet`
+# `@nestwallet/use-wallet`
 
-Core interface of [`@terra-money/wallet-provider`](https://www.npmjs.com/package/@terra-money/wallet-provider).
+Core interface of [`@nestwallet/wallet-provider`](https://www.npmjs.com/package/@nestwallet/wallet-provider).
 
-If you want to create a library using the `useWallet()` of `@terra-money/wallet-provider`, you can use
-this `@terra-money/use-wallet` instead of `@terra-money/wallet-provider` for its internal dependence.
+If you want to create a library using the `useWallet()` of `@nestwallet/wallet-provider`, you can use
+this `@nestwallet/use-wallet` instead of `@nestwallet/wallet-provider` for its internal dependence.
 
-Because `@terra-money/wallet-provider` contains multiple implementations, if your library is built
-on `@terra-money/wallet-provider`, problems can arise in exceptional situations (e.g. when users implement and use
+Because `@nestwallet/wallet-provider` contains multiple implementations, if your library is built
+on `@nestwallet/wallet-provider`, problems can arise in exceptional situations (e.g. when users implement and use
 Context themselves).
 
-Using `@terra-money/use-wallet` instead of `@terra-money/wallet-provider` can make your library work reliably in a more
+Using `@nestwallet/use-wallet` instead of `@nestwallet/wallet-provider` can make your library work reliably in a more
 diverse set of implementations.
 
-You don't have to use this library if you're just creating a WebApp. Use `@terra-money/wallet-provider`.
+You don't have to use this library if you're just creating a WebApp. Use `@nestwallet/wallet-provider`.
 
 # APIs
 
