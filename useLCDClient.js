@@ -1,4 +1,4 @@
-import { createLCDClient, } from '@terra-money/wallet-types';
+import { createLCDClient, } from '@nestwallet/wallet-types';
 import { useMemo } from 'react';
 import { useWallet } from './useWallet';
 export function useLCDClient() {

@@ -1,4 +1,4 @@
-import { createConnectedWallet, } from '@terra-money/wallet-types';
+import { createConnectedWallet, } from '@nestwallet/wallet-types';
 import { useMemo } from 'react';
 import { useWallet } from './useWallet';
 export function useConnectedWallet() {

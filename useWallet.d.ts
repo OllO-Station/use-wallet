@@ -1,5 +1,5 @@
 /// <reference types="node" />
-import { Connection, ConnectType, Installation, NetworkInfo, SignBytesResult, SignResult, TxResult, WalletInfo, WalletStatus } from '@terra-money/wallet-types';
+import { Connection, ConnectType, Installation, NetworkInfo, SignBytesResult, SignResult, TxResult, WalletInfo, WalletStatus } from '@nestwallet/wallet-types';
 import { ExtensionOptions } from '@terra-money/feather.js';
 import { Context } from 'react';
 export interface Wallet {
@@ -193,7 +193,7 @@ export interface Wallet {
      * )
      * ```
      *
-     * This type is same as `import type { TerraWebExtensionFeatures } from '@terra-money/web-extension-interface'`
+     * This type is same as `import type { TerraWebExtensionFeatures } from '@nestwallet/web-extension-interface'`
      */
     supportFeatures: Set<'post' | 'sign' | 'sign-bytes' | 'cw20-token' | 'network'>;
     /**

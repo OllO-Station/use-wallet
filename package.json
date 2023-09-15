@@ -18,7 +18,7 @@
   },
   "typings": "index.d.ts",
   "name": "@nestwallet/use-wallet",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "dependencies": {
     "@nestwallet/wallet-types": "1.2.0",
     "@terra-money/feather.js": "^1.0.0-beta.4"
